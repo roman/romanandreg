@@ -1,0 +1,91 @@
+body {
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  font-size: 0.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", serif;
+}
+
+a { 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 1024px;
+  margin: auto;
+  position: relative;
+}
+
+#header, #menu {
+  width: 260px;
+}
+
+#menu {
+  margin-top: 20px;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#menu ul li {
+  display: inline;
+  margin: 5px;
+}
+
+#menu ul li a {
+  text-align: center;
+  text-decoration: none;
+}
+
+#menu ul li.hover, #menu ul li.selected {
+  border-bottom: 2px solid blue;
+}
+
+#menu ul li.hover a:hover {
+  text-decoration: none;
+}
+
+#menu ul li span {
+  display: none;
+}
+
+#menu #title-space {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 15px;
+}
+
+#main {
+  position: absolute;
+  top: 0px;
+  left: 280px;
+}
+
+#main .mask {
+  position: relative;
+  overflow: hidden;
+  width: 749px;
+  height: 600px;
+}
+
+#main .mask .scroll {
+  position: absolute;
+  width: 749px;
+  height: 600px;
+  top: 0;
+  left: 0;
+}
+
+#main .mask .scroll div {
+  float: left;
+  width: 749px;
+  height: 600px;
+}

@@ -1,0 +1,62 @@
+body {
+  font-family: "Lucida Grande";
+  font-size: 0.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1024px;
+  margin: auto;
+}
+
+#header {
+  text-align: center;
+}
+
+#menu {
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+  min-height: 60px;
+}
+
+#menu ul {
+  display: block;
+  margin: auto;
+  width: 305px;
+  height: 30px;
+}
+
+#menu ul li {
+  display: inline;
+  float: left;
+  margin: 8px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+}
+
+#menu ul li.hover {
+  border-bottom: 2px solid blue;
+}
+
+#menu ul li span {
+  display: none;
+}
+
+#menu #title-space {
+  text-align: center;
+  margin-top: 5px;
+}
+
+#main {
+  text-align: justify;
+}
