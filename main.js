@@ -140,6 +140,10 @@ var Scroller = new Class({
     this.scroll.setStyle("width", scrollWidth);
   },
   
+  resizeMaskWithItemHeight: function(item) {
+    this.mask.setStyle("height", item.getSize().y);
+  },
+  
   onClickerClick: function(event, index) {
     event.stop();
     this.scrollTo(index);
@@ -147,7 +151,9 @@ var Scroller = new Class({
   
   scrollTo: function(index) {
     var scrollDistance = this.itemMeasure.x * index;
+    this.resizeMaskWithItemHeight(this.items[index]);
     this.scroll.tween("left", -scrollDistance);
+    
   }
   
 });
