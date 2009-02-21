@@ -28,13 +28,13 @@ a:hover {
 }
 
 #header {
-  padding: 5px 10px 20px 10px;
+  padding: 5px 0px 20px 20px;
   -moz-border-radius-topleft: 20px;
   -webkit-border-top-left-radius: 20px;
 }
 
 #menu {
-  padding: 0 10px 8px 10px;
+  padding: 0 0px 8px 20px;
 }
 
 #menu ul {

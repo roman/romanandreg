@@ -90,6 +90,7 @@ var Scroller = new Class({
     this.appendScrollToMask();
     this.getItemMeasure();
     this.resizeScroll();
+    this.resizeMaskWithItemHeight(this.items[0]);
   },
   
   buildScroll: function() {
