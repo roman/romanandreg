@@ -1,17 +1,14 @@
 application: romanandreg
-version: 0.1
+version: 1
 api_version: 1
 runtime: python
 
 handlers:
 - url: /stylesheets
   static_dir: stylesheets
-
 - url: /javascripts
   static_dir: javascripts
-
 - url: /images
   static_dir: images
-  
 - url: /.*
   script: controller.py
