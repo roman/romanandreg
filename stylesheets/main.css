@@ -121,7 +121,7 @@ a:hover {
 #main #portfolio #sugarstats h4 a {
   display: block;
   text-indent: -3000px;
-  background: url(sugarstats.gif) no-repeat;
+  background: url(/images/sugarstats.gif) no-repeat;
   width: 284px;
   height: 57px;
 }
@@ -132,7 +132,7 @@ a:hover {
 
 #main #portfolio #musiqbase h4 {
   text-indent: -3000px;
-  background: url(musiqbase.gif) no-repeat;
+  background: url(/images/musiqbase.gif) no-repeat;
   width: 234px;
   height: 71px;
 }
@@ -140,7 +140,7 @@ a:hover {
 #main #portfolio #greenwala h4 a {
   display: block;
   text-indent: -3000px;
-  background: url(greenwala.gif) no-repeat;
+  background: url(/images/greenwala.gif) no-repeat;
   width: 249px;
   height: 58px;
 }
@@ -148,7 +148,7 @@ a:hover {
 #main #portfolio #weedingbook h4 a {
   display: block;
   text-indent: -3000px;
-  background: url(weedingbook.jpg) no-repeat;
+  background: url(/images/weedingbook.jpg) no-repeat;
   width: 400px;
   height: 79px;
 }
@@ -156,7 +156,7 @@ a:hover {
 #main #portfolio #ibridge h4 a {
   display: block;
   text-indent: -3000px;
-  background: url(ibridge.gif) no-repeat;
+  background: url(/images/ibridge.gif) no-repeat;
   width: 180px;
   height: 88px;
 }

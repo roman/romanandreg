@@ -178,9 +178,45 @@ var ListItemSelector = new Class({
     }, this);
   }
   
-})
+});
 
-window.addEvent("domready", function() {
+var TwitterManager = new Class({
+  Implements: [Options],
+  options: {
+    list: null,
+    updateUrl: "",
+  },
+  
+  initialize: function(options) {
+    this.setOptions(options);
+    this.initializeList();
+    this.startListUpdate();
+    this.startListUpdate.periodical(300000, this);
+  },
+  
+  initializeList: function() {
+    this.list = $(this.options.list);
+    this.list.set("load", { 
+      onRequest: this.showLoading.bind(this), 
+      onComplete: this.hideLoading.bind(this)
+    });
+  },
+  
+  startListUpdate: function() {
+    this.list.load(this.options.updateUrl);
+  },
+  
+  showLoading: function() {
+    console.log("Loading...");
+  },
+  
+  hideLoading: function() {
+    console.log("Loading complete");
+  }
+  
+});
+
+window.onload = function() {
   new MenuHiglighter({
     items: "#menu ul li",
     titleSpace: "title-space"
@@ -190,7 +226,11 @@ window.addEvent("domready", function() {
     items: "#main div"
   });
   new ListItemSelector('#menu ul li');
+  new TwitterManager({
+    list: "twitter_timeline",
+    updateUrl: "/twitter"
+  });
   $$("a").each(function(a){
     a.set("target", "_blank");
   });
-});
+};
