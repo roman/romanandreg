@@ -160,3 +160,7 @@ a:hover {
   width: 180px;
   height: 88px;
 }
+
+#main #portfolio #merb_cucumber {
+  border-top: 0;
+}
