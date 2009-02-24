@@ -1,5 +1,5 @@
 body {
-  font-family: "Lucida Grande", Verdana, sans-serif;
+  font-family: "Lucida Grande", sans-serif;
   font-size: 0.75em;
 }
 
@@ -21,10 +21,8 @@ a:hover {
   position: relative;
 }
 
-
 #header, #menu {
   width: 270px;
-  background-color: #E0FF92;
 }
 
 #header {
@@ -34,7 +32,7 @@ a:hover {
 }
 
 #menu {
-  padding: 0 0px 8px 20px;
+  padding: 0 0 8px 20px;
 }
 
 #menu ul {
@@ -110,4 +108,55 @@ a:hover {
 #main .mask .scroll div {
   float: left;
   width: 749px;
+}
+
+#main #portfolio ul {
+  list-style: none;
+}
+
+#main #portfolio ul li {
+  border-top: 1px dashed #AAA;
+}
+
+#main #portfolio #sugarstats h4 a {
+  display: block;
+  text-indent: -3000px;
+  background: url(sugarstats.gif) no-repeat;
+  width: 284px;
+  height: 57px;
+}
+
+#main #portfolio #sugarstats {
+  border-top: 0;
+}
+
+#main #portfolio #musiqbase h4 {
+  text-indent: -3000px;
+  background: url(musiqbase.gif) no-repeat;
+  width: 234px;
+  height: 71px;
+}
+
+#main #portfolio #greenwala h4 a {
+  display: block;
+  text-indent: -3000px;
+  background: url(greenwala.gif) no-repeat;
+  width: 249px;
+  height: 58px;
+}
+
+#main #portfolio #weedingbook h4 a {
+  display: block;
+  text-indent: -3000px;
+  background: url(weedingbook.jpg) no-repeat;
+  width: 400px;
+  height: 79px;
+}
+
+#main #portfolio #ibridge h4 a {
+  display: block;
+  text-indent: -3000px;
+  background: url(ibridge.gif) no-repeat;
+  width: 180px;
+  height: 88px;
 }

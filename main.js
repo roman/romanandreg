@@ -190,4 +190,7 @@ window.addEvent("domready", function() {
     items: "#main div"
   });
   new ListItemSelector('#menu ul li');
+  $$("a").each(function(a){
+    a.set("target", "_blank");
+  });
 });
