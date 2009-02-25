@@ -21,7 +21,7 @@ a:hover {
   position: relative;
 }
 
-#header, #menu {
+#header, #menu, #twitter_section {
   width: 270px;
 }
 
@@ -73,6 +73,16 @@ a:hover {
   margin-left: 5px;
   padding-top: 10px;
   height: 30px;
+}
+
+#twitter_section ul#twitter_timeline {
+  margin: 0;
+  padding: 0;
+}
+
+#twitter_section ul#twitter_timeline li {
+  margin: 10px 0px;
+  text-align: justify;
 }
 
 #main {

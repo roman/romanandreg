@@ -185,13 +185,15 @@ var TwitterManager = new Class({
   options: {
     list: null,
     updateUrl: "",
+    periodicalUpdate: true,
+    interval: 300000
   },
   
   initialize: function(options) {
     this.setOptions(options);
     this.initializeList();
+    this.updateList();
     this.startListUpdate();
-    this.startListUpdate.periodical(300000, this);
   },
   
   initializeList: function() {
@@ -203,15 +205,25 @@ var TwitterManager = new Class({
   },
   
   startListUpdate: function() {
+    if (this.options.periodicalUpdate) { 
+      this.handler = this.updateList.periodical(this.options.interval, this);
+    }
+  },
+  
+  stopListUpdate: function() {
+    $clear(this.handler);
+  },
+  
+  updateList: function() {
     this.list.load(this.options.updateUrl);
   },
   
   showLoading: function() {
-    console.log("Loading...");
+    //console.log("Loading...");
   },
   
   hideLoading: function() {
-    console.log("Loading complete");
+    //console.log("Loading complete");
   }
   
 });
@@ -226,10 +238,10 @@ window.onload = function() {
     items: "#main div"
   });
   new ListItemSelector('#menu ul li');
-  new TwitterManager({
-    list: "twitter_timeline",
-    updateUrl: "/twitter"
-  });
+  //new TwitterManager({
+  //  list: "twitter_timeline",
+  //  updateUrl: "/twitter"
+  //});
   $$("a").each(function(a){
     a.set("target", "_blank");
   });
