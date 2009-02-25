@@ -1,5 +1,3 @@
-Home:
-
 = Welcome.
 
 I'm a Software Developer who lives in the beautiful city of Vancouver BC. My goal is to produce simple usable quality products that fits into your needs, using Open Standards and Open Source tools that costs nothing.
@@ -17,7 +15,7 @@ Starting in 2002 with studies at the Computer Science branch in <a href="http://
 
 In 2004, a half-time course was added to the goal list, studying by the hand of <acronym>IBM</acronym> on the "Training for development of e-Business applications" course. After the accomplishment of finishing the course with IBM in 2005, it was time to start to develop at a professional level, working at some places inside the university and later, on different companies, such as <a href="http://www.terabrain.com/">Terabrain Communications</a>, and <a href="http://www.hasmanydevelopers.com/">has_many :developers</a>, developing first-class applications for clients world-wide.
 
-Between 2004 and 2007, with the help of <a href="http://www.linkedin.com/pub/dir/?last=Bernadas&first=Jorge">very</a> <a href="">talented</a> friends, I started to compete on the <a href="http://cm2prod.baylor.edu/login.jsf">ACM ICPC</a>. After a lot of effort and perseverance, <em>Guayoyo</em> won several prices on regional competitions, achieving a spot in San Antonio, Texas (2006) and in Tokyo, Japan (2007) for the ACM ICPC World Finals. <em>Guayoyo</em> was one of the 82 other teams that achieve this, from a field of 6,000 teams competing at 198 sites worldwide and representing 1,700 universities from 84 countries.
+Between 2004 and 2007, with the help of <a href="http://www.linkedin.com/pub/dir/?last=Bernadas&first=Jorge">very</a> <a href="">talented</a> friends of the team <em>Guayoyo</em>, I started to compete on the <a href="http://cm2prod.baylor.edu/login.jsf">ACM ICPC</a>. After a lot of effort and perseverance, <em>Guayoyo</em> won several prices on regional competitions, achieving a spot in San Antonio, Texas (2006) and in Tokyo, Japan (2007) for the ACM ICPC World Finals. <em>Guayoyo</em> was one of the 82 other teams that achieve this, from a field of 6,000 teams competing at 198 sites worldwide and representing 1,700 universities from 84 countries.
 
 After graduating in July 2008, I moved to Vancouver BC. developing first class applications for clients world wide.
 
