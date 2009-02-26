@@ -1,123 +1,133 @@
-body {
-  font-family: "Lucida Grande", sans-serif;
-  font-size: 0.75em;
-}
+h1, h2, h3, h4 { font-family: Georgia, Helvetica, serif; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Georgia", serif;
-}
-
-a { 
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  width: 1024px;
-  margin: auto;
-  position: relative;
-}
-
-#header, #menu, #twitter_section {
-  width: 270px;
+#header, #menu {
+  height: 112px;
+  padding-top: 20px;
 }
 
 #header {
-  padding: 5px 0px 20px 20px;
-  -moz-border-radius-topleft: 20px;
-  -webkit-border-top-left-radius: 20px;
+  text-align: center;
+  width: 390px;
+  float: left;
+  margin-right: 10;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -webkit-box-shadow: -1px 5px 5px #888;
+  -moz-box-shadow: -1px 5px 5px #888;
+}
+
+#header h1 {
+  letter-spacing: -2px;
+}
+
+
+#header h2 {
+  height: 60px;
+  background: url(/images/pointer.gif) no-repeat;
+  background-position: 230px 27px;
+}
+
+#header h2 em {
+  color: #EE5D26;
+  text-decoration: underline;
+  padding-bottom: 10px;
 }
 
 #menu {
-  padding: 0 0 8px 20px;
+  width: 550px;
+  float: left;
+  margin-right: 0;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -webkit-box-shadow: 1px 5px 5px #888;
+  -moz-box-shadow: 1px 5px 5px #888;
 }
 
-#menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+#menu li a {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: black;  
 }
 
-#menu ul li {
-  display: inline;
-  padding: 2px;
-  margin: 2px;
-  text-align: center;
+#menu li a:hover {
+  /*#DD6800*/
+  background-color: #EE5D26;
+  color: white;
 }
 
-#menu ul li a {
-  text-decoration: none;
-}
-
-#menu ul li.hover {
-  border-bottom: 2px solid blue;
-}
-
-#menu ul li.selected {
+#menu li.selected a {
+  color: #EE5D26;
   font-weight: bold;
 }
 
-#menu ul li.hover a:hover {
-  text-decoration: none;
+#menu li.selected a:hover {
+  color: white;
+  font-weight: bold;
 }
 
-#menu ul li span {
+
+#menu ul {
+  list-style: none;
+  text-align: left;
+}
+
+#menu li {
+  margin: 2px;
+  display: inline;
+}
+
+#menu span {
   display: none;
 }
 
-#menu #title-space {
-  font-weight: bold;
-  margin-left: 5px;
-  padding-top: 10px;
-  height: 30px;
-}
-
-#twitter_section ul#twitter_timeline {
-  margin: 0;
-  padding: 0;
-}
-
-#twitter_section ul#twitter_timeline li {
-  margin: 10px 0px;
-  text-align: justify;
+#menu #title-space { 
+  margin-left: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+  background-color: #FBB019;
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  width: 460px;
 }
 
 #main {
-  position: absolute;
-  top: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid #DDD;
-  border-bottom: 0px;
-  -moz-border-radius-topright: 20px;
-  left: 290px;
-  color: #333;
-  font-family: Times, "Times New Roman";
-  font-size: 1.5em;
-  line-height: 1.5em;
+  float: left;
+  width: 950px;
+  margin-right: 0;
+  padding-top: 20px;
+  font-size: 150%;
+}
+
+#main a {
+  color: #DD6800;
+}
+
+#main a:hover {
+  background-color: #FBB019;
+  color: black;
 }
 
 #main .mask {
   position: relative;
   overflow: hidden;
-  width: 749px;
-  height: 600px;
 }
 
-#main .mask .scroll {
+#main .scroll {
   position: absolute;
-  width: 749px;
-  height: 600px;
-  top: 0;
   left: 0;
+  top: 0;
 }
 
-#main .mask .scroll div {
+#main .scroll div {
+  width: 950px;
+  padding-left: 10px;
   float: left;
-  width: 749px;
+}
+
+#main #portfolio h3 {
+  margin-left: 40px;
 }
 
 #main #portfolio ul {
@@ -125,23 +135,27 @@ a:hover {
 }
 
 #main #portfolio ul li {
-  border-top: 1px dashed #AAA;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px #888;
+  margin: 15px;
+}
+
+#main #portfolio p span {
+  font-weight: bold;
 }
 
 #main #portfolio #sugarstats h4 a {
   display: block;
-  text-indent: -3000px;
+  text-indent: -8000px;
   background: url(/images/sugarstats.gif) no-repeat;
   width: 284px;
   height: 57px;
 }
 
-#main #portfolio #sugarstats {
-  border-top: 0;
-}
-
 #main #portfolio #musiqbase h4 {
-  text-indent: -3000px;
+  text-indent: -8000px;
   background: url(/images/musiqbase.gif) no-repeat;
   width: 234px;
   height: 71px;
@@ -149,7 +163,7 @@ a:hover {
 
 #main #portfolio #greenwala h4 a {
   display: block;
-  text-indent: -3000px;
+  text-indent: -8000px;
   background: url(/images/greenwala.gif) no-repeat;
   width: 249px;
   height: 58px;
@@ -157,7 +171,7 @@ a:hover {
 
 #main #portfolio #weedingbook h4 a {
   display: block;
-  text-indent: -3000px;
+  text-indent: -8000px;
   background: url(/images/weedingbook.jpg) no-repeat;
   width: 400px;
   height: 79px;
@@ -165,12 +179,9 @@ a:hover {
 
 #main #portfolio #ibridge h4 a {
   display: block;
-  text-indent: -3000px;
+  text-indent: -8000px;
   background: url(/images/ibridge.gif) no-repeat;
   width: 180px;
   height: 88px;
 }
 
-#main #portfolio #merb_cucumber {
-  border-top: 0;
-}

@@ -1,0 +1,176 @@
+body {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 0.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", serif;
+}
+
+a { 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 1024px;
+  margin: auto;
+  position: relative;
+}
+
+#header, #menu, #twitter_section {
+  width: 270px;
+}
+
+#header {
+  padding: 5px 0px 20px 20px;
+  -moz-border-radius-topleft: 20px;
+  -webkit-border-top-left-radius: 20px;
+}
+
+#menu {
+  padding: 0 0 8px 20px;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#menu ul li {
+  display: inline;
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
+}
+
+#menu ul li a {
+  text-decoration: none;
+}
+
+#menu ul li.hover {
+  border-bottom: 2px solid blue;
+}
+
+#menu ul li.selected {
+  font-weight: bold;
+}
+
+#menu ul li.hover a:hover {
+  text-decoration: none;
+}
+
+#menu ul li span {
+  display: none;
+}
+
+#menu #title-space {
+  font-weight: bold;
+  margin-left: 5px;
+  padding-top: 10px;
+  height: 30px;
+}
+
+#twitter_section ul#twitter_timeline {
+  margin: 0;
+  padding: 0;
+}
+
+#twitter_section ul#twitter_timeline li {
+  margin: 10px 0px;
+  text-align: justify;
+}
+
+#main {
+  position: absolute;
+  top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #DDD;
+  border-bottom: 0px;
+  -moz-border-radius-topright: 20px;
+  left: 290px;
+  color: #333;
+  font-family: Times, "Times New Roman";
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+#main .mask {
+  position: relative;
+  overflow: hidden;
+  width: 749px;
+  height: 600px;
+}
+
+#main .mask .scroll {
+  position: absolute;
+  width: 749px;
+  height: 600px;
+  top: 0;
+  left: 0;
+}
+
+#main .mask .scroll div {
+  float: left;
+  width: 749px;
+}
+
+#main #portfolio ul {
+  list-style: none;
+}
+
+#main #portfolio ul li {
+  border-top: 1px dashed #AAA;
+}
+
+#main #portfolio #sugarstats h4 a {
+  display: block;
+  text-indent: -3000px;
+  background: url(/images/sugarstats.gif) no-repeat;
+  width: 284px;
+  height: 57px;
+}
+
+#main #portfolio #sugarstats {
+  border-top: 0;
+}
+
+#main #portfolio #musiqbase h4 {
+  text-indent: -3000px;
+  background: url(/images/musiqbase.gif) no-repeat;
+  width: 234px;
+  height: 71px;
+}
+
+#main #portfolio #greenwala h4 a {
+  display: block;
+  text-indent: -3000px;
+  background: url(/images/greenwala.gif) no-repeat;
+  width: 249px;
+  height: 58px;
+}
+
+#main #portfolio #weedingbook h4 a {
+  display: block;
+  text-indent: -3000px;
+  background: url(/images/weedingbook.jpg) no-repeat;
+  width: 400px;
+  height: 79px;
+}
+
+#main #portfolio #ibridge h4 a {
+  display: block;
+  text-indent: -3000px;
+  background: url(/images/ibridge.gif) no-repeat;
+  width: 180px;
+  height: 88px;
+}
+
+#main #portfolio #merb_cucumber {
+  border-top: 0;
+}
