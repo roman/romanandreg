@@ -238,11 +238,13 @@ window.onload = function() {
     items: "#main div"
   });
   new ListItemSelector('#menu ul li');
-  //new TwitterManager({
-  //  list: "twitter_timeline",
-  //  updateUrl: "/twitter"
-  //});
-  $$("a").each(function(a){
+/*
+  new TwitterManager({
+    list: "twitter_timeline",
+    updateUrl: "/twitter"
+  });
+*/
+  $$("#content a").each(function(a){
     a.set("target", "_blank");
   });
 };
