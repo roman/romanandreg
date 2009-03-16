@@ -3,6 +3,7 @@ h1, h2, h3, h4 { font-family: Georgia, Helvetica, serif; }
 #header, #menu {
   height: 112px;
   padding-top: 20px;
+	border-bottom: 1px solid #DDD;
 }
 
 #header {
@@ -10,10 +11,6 @@ h1, h2, h3, h4 { font-family: Georgia, Helvetica, serif; }
   width: 390px;
   float: left;
   margin-right: 10;
-  -webkit-border-bottom-left-radius: 20px;
-  -moz-border-radius-bottomleft: 20px;
-  -webkit-box-shadow: -1px 5px 5px #888;
-  -moz-box-shadow: -1px 5px 5px #888;
 }
 
 #header h1 {
@@ -37,10 +34,6 @@ h1, h2, h3, h4 { font-family: Georgia, Helvetica, serif; }
   width: 550px;
   float: left;
   margin-right: 0;
-  -webkit-border-bottom-right-radius: 20px;
-  -moz-border-radius-bottomright: 20px;
-  -webkit-box-shadow: 1px 5px 5px #888;
-  -moz-box-shadow: 1px 5px 5px #888;
 }
 
 #menu li a {
@@ -98,6 +91,7 @@ h1, h2, h3, h4 { font-family: Georgia, Helvetica, serif; }
   margin-right: 0;
   padding-top: 20px;
   font-size: 150%;
+	text-align: justify;
 }
 
 #main a {
@@ -122,7 +116,6 @@ h1, h2, h3, h4 { font-family: Georgia, Helvetica, serif; }
 
 #main .scroll div {
   width: 950px;
-  padding-left: 10px;
   float: left;
 }
 
@@ -185,3 +178,28 @@ h1, h2, h3, h4 { font-family: Georgia, Helvetica, serif; }
   height: 88px;
 }
 
+
+#main #contact ul {
+	list-style: none;
+}
+
+
+#main #contact li.first {
+	border-top: 0px;
+}
+
+#main #contact li {
+	border-top: 2px dashed #DDD;
+	padding: 5px 8px;
+	position: relative;
+	margin-bottom: 2px;
+}
+
+#main #contact li h4 {
+	display: inline;
+}
+
+#main #contact a, #main #contact span {
+	position: absolute;
+	left: 200px;
+}
