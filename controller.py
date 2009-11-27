@@ -14,16 +14,18 @@ class MainPage(webapp.RequestHandler):
     self.response.out.write(template.render(view, {}))
 
 
-class TwitterTimeline(webapp.RequestHandler):
-  def get(self):
-    api = twitter.Api('romanandreg', 'blahblah')
-    api.SetCache(None)
-    timeline = api.GetUserTimeline('romanandreg')[0:10]
-    view = os.path.join(os.path.dirname(__file__), 'twitter.html')
-    keys = {
-      'timeline': timeline,
-    }
-    self.response.out.write(template.render(view, keys))
+
+# class TwitterTimeline(webapp.RequestHandler):
+#   def get(self):
+#     api = twitter.Api('romanandreg', '')
+#     api.SetCache(None)
+#     timeline = api.GetUserTimeline('romanandreg')[0:10]
+#     view = os.path.join(os.path.dirname(__file__), 'twitter.html')
+#     keys = {
+#       'timeline': timeline,
+#     }
+#     self.response.out.write(template.render(view, keys))
+
   
 application = webapp.WSGIApplication(
                                     [('/', MainPage),
