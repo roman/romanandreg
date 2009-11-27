@@ -27,9 +27,8 @@ class MainPage(webapp.RequestHandler):
 #     self.response.out.write(template.render(view, keys))
 
   
-application = webapp.WSGIApplication(
-                                    [('/', MainPage),
-                                     ('/twitter', TwitterTimeline)])
+application = webapp.WSGIApplication([('/', MainPage)])
+                                     # ('/twitter', TwitterTimeline)])
 
 def main():
   run_wsgi_app(application)
