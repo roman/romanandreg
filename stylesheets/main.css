@@ -139,6 +139,14 @@ h1, h2, h3, h4 { font-family: Georgia, Helvetica, serif; }
   font-weight: bold;
 }
 
+#main #portfolio #noomii h4 a {
+  display: block;
+  text-indent: -8000px;
+  background: url(/images/noomii.png) no-repeat;
+  width: 150px;
+  height: 45px;
+}
+
 #main #portfolio #sugarstats h4 a {
   display: block;
   text-indent: -8000px;
