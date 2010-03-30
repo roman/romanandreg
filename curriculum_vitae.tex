@@ -1,0 +1,185 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res} 
+\usepackage{hyperref}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\begin{document}
+
+\name{Roman Gonzalez}
+% \address used twice to have two lines of address
+\address{7707 Arthur Av. Burnaby, BC. Canada}
+\address{+1 (604) 728-4864}
+ 
+\begin{resume}
+ 
+\section{SKILLS} 
+  \begin{list}{\labelitemi}{\leftmargin=1em}
+    \item Proficient level on the Ruby Programming Language
+    \item Competent level on the Java Programming Language
+    \item Proficient level on Ruby Web Frameworks and Web Technologies
+    \item Competent level on Collaborative Development using GIT and Subversion 
+    \item Competent level on the use of Design Patterns
+    \item Knowledge of *nix system architecture
+    \item Basic Knowledge of the Haskell Programming Language
+    \item Basic Knowledge of Python Programming Language
+    \item Basic Knowledge of Distributed Applications, Database and Networks
+  \end{list}
+
+\section{LANGUAGES}
+  \textbf{Spanish} -- Mother's Language \\
+  \textbf{English} -- Advanced and Technical \\
+  \textbf{German}  -- Beginner
+
+\section{EDUCATION}
+  {\sl B.S. in Computer Science} \hfill \textbf{Nov 2002 - Jul 2008} \\
+  {\sl Universidad Central de Venezuela (UCV) } \\
+  {\sl Specializing in Parallel and Distributed Computing} \\
+  \begin{list}{\labelitemi}{\leftmargin=1em}
+    \item Developed simple applications using C programming language and MPI
+    \item Developed applications using CORBA with Python (Fnorb), including SOAP for Web Services 
+          and PSP with mod\_python for web interface
+    \item Developed Web Applications using Java and J2EE with Struts and Hibernate Frameworks
+    \item Developed Web Applications using Ruby and Ruby on Rails
+  \end{list}
+  {\sl IBM Ace Professional certificate} \hfill \textbf{May 2004 - May 2005} \\
+  {\sl IBM Venezuela. Specialized in Web Application Development and e-Business.}
+  
+\section{TEACHING}
+  {\sl Instructional Student Assistant} \hfill \textbf{Spring 2006} \\
+  \newline
+  Data Structures and Algorithms, Computer Science School, Universidad Central de Venezuela. Caracas, Venezuela.
+
+\section{AWARDS}
+  {\sl Honorable Mention} -- ACM International Collegiate Programming Contest 31th World Finals. 
+  Tokyo, Japan. \textbf{March 2007} \\
+  \newline
+  {\sl Champion, Venezuela and Colombia Region} -- ACM International Collegiate Programming Contest, 9th South 
+  American Region Contest. Cumaná, Venezuela. \textbf{Nov 2006} \\
+  \newline
+  {\sl Champion, UCV} -– 12th ACM Local Programming Contest, Universidad Central de Venezuela (UCV). 
+  Caracas, Venezuela. \textbf{Jul 2006} \\
+  \newline
+  {\sl Champion, UCAB} –- 8th ACM Local Programming Contest, Universidad Católica Andrés Bello (UCAB). 
+  Caracas, Venezuela. \textbf{Jun 2006} \\
+  \newline
+  {\sl Honorable Mention} -– ACM International Collegiate Programming Contest, 30th World Finals. 
+  San Antonio, Texas, United States. \textbf {Apr 2006} \\
+  \newline
+  {\sl Certificate of Achievement} –- Upsilon Pi Epsilon Honor Society in the Computing \& Information Disciplines. 
+  San Antonio, Texas, United States. \textbf {Apr 2006} \\
+  \newline
+  {\sl Champion, Venezuela} – ACM International Collegiate Programming Contest, 8th South American Region 
+  Contest. Caracas, Venezuela. \textbf {Nov 2005} \\
+  \newline
+  {\sl Champion, UCV} – 11th ACM Local Programming Contest, Universidad Central de Venezuela (UCV). 
+  Caracas, Venezuela. \textbf {Jul 2005} \\
+  \newline
+  {\sl Champion, UCAB} – 7th ACM Local Programming Contest, Universidad Católica Andrés Bello (UCAB)
+  Caracas, Venezuela. \textbf {Jun 2005} \\
+
+\section{OPEN SOURCE}
+  \begin{list}{\leftmargin=1em}
+    \setlength{\itemsep=30em}
+    \item \textbf{\href{http://www.github.com/roman/walruz}{walruz}} -- Ruby authorization library for the 
+    development of complex authorization architectures using composition of simple policies
+    \item \textbf{\href{http://github.com/roman/warden\_oauth}{warden\_oauth}} -– This a Warden extension that 
+    provides easy setup for authentication using the OAuth protocol
+    \item \textbf{\href{http://github.com/roman/merb\_cucucmber}{merb\_cucumber}} -– Co-authored with David Leal, 
+    this is a gem that provides an easy integration with the Cucumber test framework
+    \item \textbf{\href{http://github.com/roman/rots}{rots (Ruby OpenID Test Server)}} -– A gem that provides 
+    an easy interface for testing OpenID consumer implementations.
+  \end{list}
+
+\section{EXPERIENCE} 
+  {\sl Full Time Programmer} -- \href{http://www.noomii.com}{Noomii Inc.} Vancouver, BC. \hfill \textbf{May 2009 - Present} \\
+  \begin{itemize}
+    \item Development of new features, test infrastructure and maintenance of Noomii.com using Ruby on Rails
+  \end{itemize}
+
+  {\sl Full Time Programmer} -- \href{http://www.mezine.com}{Mezine Inc.} Vancouver, BC. \hfill \textbf{Dec 2008 - Feb 2010} \\
+  \begin{itemize}
+    \item Development of a Wiki Application using an in-house Ruby framework (\href{http://wiki.with.us}{Wiki With Us})
+  \end{itemize}
+
+  {\sl Full Time Programmer} -- \href{http://www.hasmanydevelopers.com}{has\_many :developers} \hfill \textbf{Mar 2007 - Nov 2008} \\
+  \hspace*{110pt} Caracas, Venezuela. \\
+  \begin{itemize}
+    \item Development of a Sugar Tracking System for Diabetics using Ruby on Rails (\href{http://www.sugarstats.com}{SugarStats})
+    \item Development of Facebook and OpenID integration in an Enviromental Social Site using Merb. (\href{http://www.greenwala.com}{Greenwala})
+    \item Development of a Multimedia System for Music Schools on the US using Ruby on Rails (\href{http://www.musiqbase.com}{MusiqBase})
+    \item Development of an in-house OpenID Identity System (Client and Server) using Ruby on Rails
+    \item Development of an application for parsing memorials pages to extract data using Ruby programming language with Hpricot 
+    \item Development of features in a Web wedding planner application using Ruby on Rails. (\href{http://weddingbook.com/}{WeddingBook})
+    \item Development of features in an Innovation Driven Community Web application using Ruby on Rails. (\href{http://www.ibridge.com}{iBridge})
+  \end{itemize}
+
+  {\sl Half Time Programmer} -- \href{www.terabrain.com}{Terabrain Communications}\hfill \textbf{Jul 2006 - Jan 2007}
+  \hspace*{110pt} Caracas, Venezuela. \\
+  \begin{itemize}
+    \item Web Front-End for a cellular phone text messages client (SMS) using J2EE
+  \end{itemize}
+
+  {\sl Half Time Programmer} -- \href{www.ciens.ucv.ve/ccc}{CS School’s Computer Centre}\hspace{20pt} \textbf{Aug 2005 - Jan 2006}
+  \hspace*{115pt} Universidad Central de Venezuela. \\
+  \hspace*{115pt} Caracas, Venezuela. \\
+  \begin{itemize}
+    \item Web based printing application for the Computer Center using J2EE
+  \end{itemize}
+ 
+\section{REFERENCES} 
+  Upon Request.
+
+
+
+%
+%\section{EXPERIENCE} {\textbf Business Applications Programmer} \hfill Fall 1990 \\
+%                Allied-Signal Bendix Friction Materials Division, 
+%                Financial Planning Department, Latham, NY
+%                 \begin{itemize}  \itemsep -2pt % reduce space between items
+%                 \item Developed four "user friendly" forecasting 
+%                    systems each of which produces 18 to 139 
+%                    individual reports. 
+%                \item   Developed or improved almost all IFPS 
+%                    programs used for financial reports. 
+%                \end{itemize}
+% 
+%                {\textbf Research Programmer} \hfill            Summer 1990 \\
+%                Psychology Department, Rensselaer Polytechnic 
+%                Institute 
+%                 \begin{itemize}  \itemsep -2pt %reduce space between items
+%                 \item Performed computer aided statistical analysis 
+%                    of data. 
+%                 \end{itemize} 
+%                {\textbf Assistant Manager} \hfill        Summers 1988-89 \\
+%                Thunder Restaurant, Canton, CT
+%                  \begin{itemize}
+%                   \item Recognized need for, developed, and wrote 
+%                    employee training manual. Performed various 
+%                    duties including cooking, employee training, 
+%                    ordering, and inventory control. 
+%                   \end{itemize} 
+% 
+%\section{COMMUNITY \\ SERVICE}  Organized and directed the 1988 and 1989 Grand 
+%                 Marshall Week \newline ``Basketball Marathon.'' A 24 hour 
+%                charity event to benefit the Troy Boys Club. Over 
+%                250 people participated each year. 
+%
+%\section{EXTRA-CURRICULAR \\ ACTIVITIES}             
+%            Elected {\it House Manager}, Rho Phi Sorority \\
+%            Elected {\it Sports Chairman} \\
+%            Attended Krannet Leadership Conference \\
+%                Headed delegation to Rho Phi Congress \\
+%                Junior varsity basketball team \\
+%                Participant, seven intramural athletic teams 
+% 
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
