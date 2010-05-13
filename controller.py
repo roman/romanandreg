@@ -14,7 +14,6 @@ class MainPage(webapp.RequestHandler):
     self.response.out.write(template.render(view, {}))
 
 
-
 # class TwitterTimeline(webapp.RequestHandler):
 #   def get(self):
 #     api = twitter.Api('romanandreg', '')
@@ -29,6 +28,7 @@ class MainPage(webapp.RequestHandler):
   
 application = webapp.WSGIApplication([('/', MainPage)])
                                      # ('/twitter', TwitterTimeline)])
+
 
 def main():
   run_wsgi_app(application)
